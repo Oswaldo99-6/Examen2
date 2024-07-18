@@ -41,13 +41,13 @@ function sumar() {
     const sliderValue = parseInt(document.getElementById('ac1').value);
     presupuesto += sliderValue;
     document.getElementById("cantidad1").innerHTML = `$ ${presupuesto}.00 MXN`;
-    agregarAccion('Suma', sliderValue);
+    agregarAccion('+', sliderValue);
 }
 
 function restar() {
     const sliderValue = parseInt(document.getElementById('ac1').value);
     presupuesto -= sliderValue;
     document.getElementById("cantidad1").innerHTML = `$ ${presupuesto}.00 MXN`;
-    agregarAccion('Resta', sliderValue);
+    agregarAccion('-', sliderValue);
 }
 
