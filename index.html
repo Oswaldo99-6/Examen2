@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Dinero</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        #cantidad1 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">REGISTRO DE DINERO</a>
+            <button onclick="Eliminar()" class="btn btn-danger">Eliminar</button>
+        </div>
+    </nav>
+
+    <div id="cantidad1" class="text-center"></div>
+    <div class="text-center">
+        <input type="range" id="ac1" min="0" max="100" value="0">
+        <span id="slidecan">0$</span>
+        <br>
+        <button onclick="sumar()" class="btn btn-success">+</button>
+        <button onclick="restar()" class="btn btn-danger">-</button>
+    </div>
+
+    <div id="actions-table-div">
+        <h3>Historial de Acciones</h3>
+        <table id="actions-table" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Acción</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
